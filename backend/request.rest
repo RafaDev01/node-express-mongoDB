@@ -1,0 +1,91 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum servico 2",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/65b29dd92a9788a98e35ba7a
+
+###
+DELETE http://localhost:3000/api/services/65b29c79164f3323c402c79b
+
+###
+PUT http://localhost:3000/api/services/65b29c5c164f3323c402c799
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZACAO",
+    "description": "DESCRICAO ATAULIZADA",
+    "price": 20000,
+    "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg"
+}
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Festa do tarzan angolano",
+    "author": "TARZAN",
+    "description": "Uma festa de aniversário",
+    "budget": 30000,
+    "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg",
+    "services": [
+        {
+            "name": "Piscina de bolinha",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg"
+        },
+        {
+            "name": "Piscina de cactus",
+            "description": "Alguma descrição",
+            "price": 2600,
+            "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/65b2b0f8dee5bdb2c8bc6255
+
+###
+DELETE http://localhost:3000/api/parties/65b3e7323b55dac1e46f0d02
+
+###
+PUT http://localhost:3000/api/parties/65b2b0f8dee5bdb2c8bc6255
+Content-Type: application/json
+
+{
+    "title": "Festa do tarzan angolano",
+    "author": "TARZAN",
+    "description": "Uma festa de aniversário",
+    "budget": 15000,
+    "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg",
+    "services": [
+        {
+            "name": "Piscina de bolinha",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg"
+        },
+        {
+            "name": "Piscina de cactus",
+            "description": "Alguma descrição",
+            "price": 2600,
+            "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg"
+        }
+    ]
+}
