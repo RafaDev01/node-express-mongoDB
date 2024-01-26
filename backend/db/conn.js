@@ -6,7 +6,8 @@ async function main(){
 
     try {
         await mongoose.connect(
-                "mongodb+srv://rafael:aPmsmhoUVz2X6AZt@cluster0.md2yrvs.mongodb.net/?retryWrites=true&w=majority"
+                //conexao com o DB
+                ""
             );
 
             console.log("Conectado ao banco!")
